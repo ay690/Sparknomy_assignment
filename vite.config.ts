@@ -19,21 +19,21 @@ export default defineConfig({
     chunkSizeWarningLimit: 1000, // Increase the warning limit to 1000KB
     rollupOptions: {
       output: {
-        manualChunks: (id) => {
-          if (id.includes('node_modules')) {
-            // Group node modules into chunks
-            if (id.includes('react') || id.includes('react-dom')) {
-              return 'vendor-react';
-            }
-            if (id.includes('@reduxjs') || id.includes('react-redux')) {
-              return 'vendor-redux';
-            }
-            if (id.includes('recharts')) {
-              return 'vendor-charts';
-            }
-            return 'vendor-other';
-          }
-        },
+        // manualChunks: (id) => {
+        //   if (id.includes('node_modules')) {
+        //     // Group node modules into chunks
+        //     if (id.includes('react') || id.includes('react-dom')) {
+        //       return 'vendor-react';
+        //     }
+        //     if (id.includes('@reduxjs') || id.includes('react-redux')) {
+        //       return 'vendor-redux';
+        //     }
+        //     if (id.includes('recharts')) {
+        //       return 'vendor-charts';
+        //     }
+        //     return 'vendor-other';
+        //   }
+        // },
       },
     },
   },
