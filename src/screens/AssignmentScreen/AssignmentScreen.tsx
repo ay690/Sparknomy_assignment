@@ -8,6 +8,7 @@ import { EarningsSection } from "../../components/dashboard/EarningsCard/Earning
 import { IncomeChart } from "../../components/dashboard/IncomeChart/IncomeChart";
 import { TimePeriodSelector } from "../../components/dashboard/TimePeriodSelector/TimePeriodSelector";
 import { InvoiceList } from "../../components/dashboard/InvoiceList/InvoiceList";
+import { Footer } from "../../components/dashboard/Footer/Footer";
 
 const DashboardContent: React.FC = () => {
   return (
@@ -20,7 +21,7 @@ const DashboardContent: React.FC = () => {
             <div className="absolute w-[390px] h-[905px] top-0 left-0 bg-white/20" />
 
             {/* Main content area */}
-            <div className="absolute w-[390px] h-[2120px] top-[107px] left-0 bg-white rounded-[46px_46px_0px_0px]" />
+            <div className="absolute w-[390px] h-[2200px] top-[107px] left-0 bg-white rounded-[46px_46px_0px_0px]" />
 
             {/* Content sections */}
             <div className="flex flex-col w-[377px] items-center gap-6 absolute top-[129px] left-1.5">
@@ -40,6 +41,7 @@ const DashboardContent: React.FC = () => {
                <InvoiceList />
               </div>
             </div>
+         <Footer />
           </div>
         </div>
       </div>
