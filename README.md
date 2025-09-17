@@ -32,7 +32,7 @@ A modern, responsive (mobile-view) invoice management dashboard built with React
 1. **Clone the repository**
 
    ```bash
-   git clone [https://github.com/ay690/Sparknomy_assignment.git](https://github.com/ay690/Sparknomy_assignment.git)
+   git clone https://github.com/ay690/Sparknomy_assignment.git
    cd Sparknomy_assignment
    ```
 
