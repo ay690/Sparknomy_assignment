@@ -5,6 +5,7 @@ import { Header } from "../../components/dashboard/Header/Header";
 import { CreateInvoiceCard } from "../../components/dashboard/CreateInvoiceCard/CreateInvoiceCard";
 import type { JSX } from "react/jsx-dev-runtime";
 import { EarningsSection } from "../../components/dashboard/EarningsCard/EarningsCard";
+import { IncomeChart } from "../../components/dashboard/IncomeChart/IncomeChart";
 import { TimePeriodSelector } from "../../components/dashboard/TimePeriodSelector/TimePeriodSelector";
 
 const DashboardContent: React.FC = () => {
@@ -34,6 +35,7 @@ const DashboardContent: React.FC = () => {
                 </div>
                <TimePeriodSelector />
                <EarningsSection />
+               <IncomeChart />
               </div>
             </div>
           </div>
