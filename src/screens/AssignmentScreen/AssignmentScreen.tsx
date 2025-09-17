@@ -1,14 +1,25 @@
-interface AssignmentProps {
-  title: string
-}
+import React from "react";
+import { Provider } from 'react-redux';
+import { store } from '../../store';
+import type { JSX } from "react/jsx-dev-runtime";
 
-const AssignmentScreen: React.FC<AssignmentProps> = ({ title }) => {
+const DashboardContent: React.FC = () => {
   return (
-    <h1 className="text-md">
-      {title}
-    </h1>
-  )
-}
+    <h1 className="text-xl">hey there</h1>
+    // Header 
+    // Content section
+    //    -create invoice Card
+    //    -Time period selector 
+    //    - earning section 
+    //    - income section
+    //Footer
+  );
+};
 
-
-export default AssignmentScreen;
+export const AssignmentScreen = (): JSX.Element => {
+  return (
+    <Provider store={store}>
+      <DashboardContent />
+    </Provider>
+  );
+};
