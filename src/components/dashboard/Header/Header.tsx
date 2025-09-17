@@ -2,6 +2,7 @@ import React from "react";
 import { Button } from "../../common/Button/Button";
 import { ChevronLeft } from "lucide-react"; 
 import batteryIdicatorIcon from "../../../assets/BatteryAndIndicator.svg"
+import avatar from "../../../assets/Avatar.svg";
 
 export const Header: React.FC = () => {
   return (
@@ -28,7 +29,11 @@ export const Header: React.FC = () => {
 
         <h1 className="text-black text-[17px] font-semibold">Dashboard</h1>
 
-        <div className="w-10 h-10 rounded-full bg-cover bg-center bg-[url(src/assets/Avatar.svg)]" />
+        <img
+          src={avatar}
+          alt="User avatar"
+          className="w-10 h-10 rounded-full object-cover"
+        />
       </header>
     </div>
   );
