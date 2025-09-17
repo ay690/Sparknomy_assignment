@@ -131,7 +131,7 @@ const initialState: DashboardState = {
       dueDate: "2024-06-15",
       status: "draft",
       statusLabel: "Draft",
-      statusColor: "bg-light-grey text-sparko-dark-grey",
+      statusColor: "bg-gray-300/30 text-sparko-dark-grey",
       hasEditIcon: true,
     },
     {

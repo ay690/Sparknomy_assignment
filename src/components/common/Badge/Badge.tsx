@@ -1,7 +1,7 @@
 import React from 'react';
 import { cn } from '../../../lib/utils';
 
-interface BadgeProps {
+interface BadgeProps extends React.HTMLAttributes<HTMLSpanElement> {
   children: React.ReactNode;
   className?: string;
   variant?: 'default' | 'success' | 'warning' | 'error' | 'info';
@@ -10,7 +10,8 @@ interface BadgeProps {
 export const Badge: React.FC<BadgeProps> = ({ 
   children, 
   className,
-  variant = 'default'
+  variant = 'default',
+  ...rest
 }) => {
   const variantClasses = {
     default: 'bg-gray-100 text-gray-800',
@@ -21,11 +22,14 @@ export const Badge: React.FC<BadgeProps> = ({
   };
 
   return (
-    <span className={cn(
-      'inline-flex items-center px-3 py-1 rounded-full text-xs font-medium',
-      variantClasses[variant],
-      className
-    )}>
+    <span
+      className={cn(
+        'inline-flex items-center px-3 py-1 rounded-full text-xs font-medium',
+        variantClasses[variant],
+        className
+      )}
+      {...rest} 
+    >
       {children}
     </span>
   );

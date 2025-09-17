@@ -7,6 +7,7 @@ import type { JSX } from "react/jsx-dev-runtime";
 import { EarningsSection } from "../../components/dashboard/EarningsCard/EarningsCard";
 import { IncomeChart } from "../../components/dashboard/IncomeChart/IncomeChart";
 import { TimePeriodSelector } from "../../components/dashboard/TimePeriodSelector/TimePeriodSelector";
+import { InvoiceList } from "../../components/dashboard/InvoiceList/InvoiceList";
 
 const DashboardContent: React.FC = () => {
   return (
@@ -36,6 +37,7 @@ const DashboardContent: React.FC = () => {
                <TimePeriodSelector />
                <EarningsSection />
                <IncomeChart />
+               <InvoiceList />
               </div>
             </div>
           </div>
